@@ -124,10 +124,10 @@ resource "aws_s3_bucket" "example_bucket" {
   tags = { Name = var.bucket_name }
 }
 
-#Creación de instancia EC2
+#Creación de instancia EC2 con Amazon Linux 2 kernel 6.1
 
 resource "aws_instance" "web" {
-  ami           = "ami-0b898040803850657" # Amazon Linux 2 kernel 6.1
+  ami           = "ami-0b898040803850657" 
   instance_type = var.ec2_instance_type
   subnet_id     = aws_subnet.example.id
   vpc_security_group_ids = [aws_security_group.web_sg.id]
