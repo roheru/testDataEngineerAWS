@@ -32,7 +32,7 @@ CREATE TABLE DIMENSION_CANAL (
     canal VARCHAR2(50)
 );
 
--- 2. Tabla de Hechos
+-- Tabla de Hechos
 
 CREATE TABLE HECHO_TRANSACCIONES (
     id_transaccion NUMBER PRIMARY KEY,
